@@ -1,11 +1,22 @@
 @charset "UTF-8";
 
-body{
-    margin: 0px;
-    
+:root{
+    --fonte1: Verdana, Geneva Tahoma, sansserif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
 }
 
-header{
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: darkgray;
+
+}
+
+header {
     background-color: black;
     color: white;
     text-align: center;
@@ -15,18 +26,47 @@ header{
 header a {
     text-decoration: none;
     color: white;
-    font-weight: bold;   
+    font-weight: bold;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-main{
-    padding: 10px;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 3.5vw;
+    font-family: var(--fonte3);
 }
 
-footer{
+section.normal{
+    background-color: white;
+}
+
+section.imagem {
+    background-color: black;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    /* background-size: cover;
+    background-attachment: fixed; */
+
+}
+
+#img001{
+    
+}
+
+#img001>p {
+    background-color: rgba(0, 0, 0, 0.396);
+    color: white;
+    width: 15%;
+    padding: 5px;
+}
+
+footer {
     background-color: black;
     color: white;
     padding: 10px;
@@ -43,4 +83,3 @@ footer a {
     color: white;
     font-weight: bold;
 }
-
